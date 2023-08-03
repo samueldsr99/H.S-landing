@@ -1,0 +1,23 @@
+.button {
+    border-radius: 29px;
+    border: none;
+    padding: 16px 40px 18px 40px;
+    flex-shrink: 0;
+    transition: border-color 0.25s;
+
+    font-family: 'Apercu Pro';
+    color: var(--white);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+}
+
+.button-primary {
+    border-radius: 29px;
+    background: var(--primary);
+    color: var(--primary-content);
+
+}
