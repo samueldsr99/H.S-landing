@@ -55,7 +55,7 @@ devDependencies:
     specifier: ^10.0.0
     version: 10.0.0(eslint@8.45.0)
   husky:
-    specifier: ^8.0.3
+    specifier: ^8.0.0
     version: 8.0.3
   prettier:
     specifier: ^3.0.0
