@@ -1,4 +1,3 @@
-import Button from "@/components/Button/Button";
 import Navbar from "@/components/Navbar";
 import About from "@/page-components/About/About";
 
@@ -8,8 +7,7 @@ const HomePage: React.FC = () => {
       <header>
         <Navbar />
       </header>
-      <main>
-        <Button>Hello</Button>
+      <main className="pb-8 md:pb-20 lg:pb-36">
         <About />
       </main>
     </>

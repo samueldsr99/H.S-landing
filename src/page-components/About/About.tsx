@@ -1,24 +1,29 @@
+import useGetDataScienceApprenticeshipZeptolab from "@/hooks/useGetDataScienceApprenticeshipZeptolab";
+
 import CardsGrid from "./CardsGrid";
 
+import "./About.styles.css";
+
 const About: React.FC = () => {
-  return (
-    <section className="mt-5 px-5 md:px-40" id="about">
-      <div className="grid items-start grid-cols-1 md:grid-cols-2 gap-x-30">
-        <div className="relative inline-flex items-center justify-center shrink-0">
-          <img className="w-full h-auto rounded-full z-10 absolute" src="/about-desktop.png" width={380} height={380} />
-          <img className="w-full h-auto z-0" src="/pattern-1.svg" width={438} height={438} />
+  const { data, isLoading } = useGetDataScienceApprenticeshipZeptolab();
+
+  return !isLoading ? (
+    <section className="mt-44" id="about">
+      <div className="container max-w-7xl mx-auto px-4 md:px-10">
+        <div className="flex flex-col items-center md:flex-row justify-between">
+          <div className="flex-container">
+            <div className="image-container" />
+            <div className="relative z-10 bg-white border px-4 py-2 w-full pt-52 md:mx-0 md:border-none md:pt-16 sm:pl-10 md:pl-28 space-y-10">
+              <h1 className="text-primary text-4xl md:text-5xl font-medium leading-10">About the apprenticeship</h1>
+              <p className="text-lg md:text-xl font-light leading-8">{data?.scholarship?.about?.[0]?.data}</p>
+            </div>
+          </div>
         </div>
-        <div className="mt-8 space-y-10">
-          <h1 className="text-primary text-5xl font-medium leading-10">About the apprenticeship</h1>
-          <p className="text-xl font-light leading-8">
-            Our scholarships are designed to give talented and driven young people from any background access to
-            top-class education, experience and network. We offer a fully-funded master’s degree alongside an
-            apprenticeship and a guaranteed job upon graduation.
-          </p>
-        </div>
+        <CardsGrid />
       </div>
-      <CardsGrid />
     </section>
+  ) : (
+    <></>
   );
 };
 

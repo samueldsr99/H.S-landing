@@ -1,61 +1,70 @@
-#about {
-    margin: auto 20px;
-    /* padding: 80px 199px 80px 203px; */
-}
-
-.about {
-    display: grid;
-    align-items: start;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    column-gap: 120px;
-}
-
-.about-pic {
+.image-container {
     position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+    height: 380px;
+    max-width: 380px;
+    min-width: 380px;
+    margin: 30px;
+    z-index: 30;
+
+    @media (max-width: 1023px) {
+        height: 300px;
+        max-width: 300px;
+        min-width: 300px; 
+    }
+    @media (max-width: 992) {
+        height: 280px;
+        max-width: 280px;
+        min-width: 280px; 
+    }
+    @media (max-width: 767px) {
+        height: 252px;
+        max-width: 252px;
+        min-width: 252px;
+        margin: 42px auto -130px;
+    }
 }
 
-.about-pic__pattern {
-    width: 100%;
-    height: auto;
-    z-index: 0;
-}
-
-.about-pic__img {
-    width: calc(100% - 40px);
-    height: auto;
+.image-container::before {
+    content: "";
     position: absolute;
-    z-index: 10;
-    border-radius: 99999px;
+    inset: -30px;
+    margin: auto;
+    background: url(/pattern-grid.svg) 15px 15px / 40px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 50%;
 }
 
-.about-text {
-    margin-top: 32px;
+.image-container::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(/about-desktop.png) center 0px / cover;
+    border-radius: 50%;
+    z-index: 30;
 }
 
-.about-text > * {
-    margin-top: 40px;
+.flex-container {
+    position: relative;
+    z-index: 3;
+    display: flex;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
 }
 
-.about-text__title {
-    color: #685DC5;
-    font-family: Apercu Pro;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 56px; /* 116.667% */
-    letter-spacing: -0.6px;
-}
-
-.about-text__description {
-    color: #535353;
-    font-family: Apercu Pro;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 32px;
-    letter-spacing: -0.33px;
+@media (max-width: 767px) {
+    .flex-container::after {
+        content: "";
+        position: absolute;
+        top: 180px;
+        left: -65px;
+        right: -65px;
+        height: 390px;
+        background: rgb(104, 93, 197);
+    }
 }
