@@ -1,9 +1,11 @@
-import Navbar from "./components/Navbar";
+import StickyBar from "@/components/StickyBar";
+import HomePage from "@/pages/home";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <HomePage />
+      <StickyBar />
     </>
   );
 }
