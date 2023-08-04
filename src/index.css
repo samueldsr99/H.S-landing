@@ -34,7 +34,6 @@
   font-style: italic;
 }
 
-
 @font-face {
   font-family: Apercu Pro;
   src: url(./assets/fonts/ApercuMedium.otf);
@@ -46,6 +45,18 @@
   src: url(./assets/fonts/ApercuMediumItalic.otf);
   font-weight: 500;
   font-style: italic;
+}
+
+@font-face {
+  font-family: Apercu Pro;
+  src: url(./assets/fonts/ApercuMono.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Apercu Pro;
+  src: url(./assets/fonts/ApercuRegular.otf);
+  font-weight: 400;
 }
 
 :root {
@@ -67,3 +78,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+::-webkit-scrollbar {
+    width: 0; 
+}
+
