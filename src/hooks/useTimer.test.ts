@@ -1,4 +1,5 @@
 import { addDays, addHours, addMinutes, addSeconds } from "date-fns";
+import { describe, expect, it } from "vitest";
 
 import { calculateTimeLeft } from "./useTimer";
 
