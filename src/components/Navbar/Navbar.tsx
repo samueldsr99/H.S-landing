@@ -1,15 +1,13 @@
 import menuIconImg from "@/assets/menu-icon.png";
 
-import "./Navbar.styles.css";
-
 const Navbar: React.FC = () => {
   return (
-    <nav className="navbar">
-      <div className="navbar navbar-start">
-        <h3 className="logo">Harbour.Space</h3>
-        <span className="interaction-design-text uppercase">/Interaction Design</span>
+    <nav className="flex justify-between items-center h-16 bg-primary px-4 md:px-12">
+      <div className="inline-flex">
+        <h3 className="font-bold uppercase">Harbour.Space</h3>
+        <span className="ml-2 text-sm uppercase">/Interaction Design</span>
       </div>
-      <div className="navbar navbar-end">
+      <div className="">
         <img src={menuIconImg} width={35} height={30} alt="Menu Icon" />
       </div>
     </nav>

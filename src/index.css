@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: Apercu Pro;
   src: url(./assets/fonts/apercu_medium_pro.otf);
@@ -43,13 +47,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-  /* Colors */
-  --white: #FFFFFF;
-  --primary: #685DC5;
-  --primary-content: #FFFFFF;
-  --secondary: #4FA16C;
-  --secondary-content: #FFFFFF;
 }
 
 body {
