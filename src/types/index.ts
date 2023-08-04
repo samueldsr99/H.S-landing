@@ -76,7 +76,7 @@ export interface Scholarship {
   totalValue: number;
   stipendPerMonth: number;
   stipendPerYear: number;
-  remaining: string;
+  remaining: number;
   studyCommitment: number;
   internshipCommitment: number;
   studyCommitmentText: string;
