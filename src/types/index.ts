@@ -20,6 +20,16 @@ export interface Testimonial {}
 
 export type InformationEntry = Paragraph | List;
 
+export interface Company {
+  id: number;
+  scope: string;
+  name: string;
+  type: string;
+  color: string;
+  website?: string | null;
+  rank: number;
+}
+
 export interface Paragraph {
   type: "paragraph";
   data: string;
@@ -91,7 +101,7 @@ export interface Scholarship {
     item: FAQItem[];
     categories: string[];
   };
-  // TODO: fill missing values
+  company: Company;
 }
 
 export interface GetDataScienceApprenticeshipZeptolabResponse {
