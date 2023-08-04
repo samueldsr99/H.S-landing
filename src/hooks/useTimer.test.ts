@@ -10,6 +10,17 @@ describe("", () => {
     expect([days, hours, minutes, seconds]).toEqual([0, 0, 0, 0]);
   });
 
+  it("should return 0 when date is past", () => {
+    const now = new Date();
+
+    let pastDate = addDays(now, -7);
+    pastDate = addHours(pastDate, -20);
+    pastDate = addMinutes(pastDate, -38);
+
+    const { days, hours, minutes, seconds } = calculateTimeLeft(pastDate);
+    expect([days, hours, minutes, seconds]).toEqual([0, 0, 0, 0]);
+  });
+
   it("should work properly on future dates", () => {
     const now = new Date();
 
