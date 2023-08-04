@@ -40,7 +40,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: rgba(255, 255, 255, 0.87);
+  color: #535353;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -54,3 +54,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+::-webkit-scrollbar {
+    width: 0; 
+}
+
