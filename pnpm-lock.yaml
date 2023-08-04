@@ -4,6 +4,9 @@ dependencies:
   '@reduxjs/toolkit':
     specifier: ^1.9.5
     version: 1.9.5(react-redux@8.1.2)(react@18.2.0)
+  '@types/humps':
+    specifier: ^2.0.3
+    version: 2.0.3
   classnames:
     specifier: ^2.3.2
     version: 2.3.2
@@ -682,6 +685,10 @@ packages:
     dependencies:
       '@types/react': 18.2.15
       hoist-non-react-statics: 3.3.2
+    dev: false
+
+  /@types/humps@2.0.3:
+    resolution: {integrity: sha512-vAlJzfckbETRvZY2q36QHEWU+vKTYeXi1KcAKYoRjXopodTpHYBBk/BXyWGjJNw6gLgvTQBOxI4uI0FdhKKjtw==}
     dev: false
 
   /@types/json-schema@7.0.12:
