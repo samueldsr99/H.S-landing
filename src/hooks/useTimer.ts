@@ -21,10 +21,10 @@ export const calculateTimeLeft = (targetDate: Date): Timer => {
   const remainingSeconds = timeLeftInSeconds % SECONDS_PER_MINUTE;
 
   return {
-    days,
-    hours: remainingHours,
-    minutes: remainingMinutes,
-    seconds: remainingSeconds,
+    days: Math.max(days, 0),
+    hours: Math.max(remainingHours, 0),
+    minutes: Math.max(remainingMinutes, 0),
+    seconds: Math.max(remainingSeconds, 0),
   };
 };
 
