@@ -9,7 +9,7 @@ const About: React.FC = () => {
 
   return !isLoading ? (
     <section className="mt-44" id="about">
-      <div className="container max-w-7xl mx-auto px-4 md:px-10">
+      <div className="container max-w-6xl mx-auto px-4 md:px-10">
         <div className="flex flex-col items-center md:flex-row justify-between">
           <div className="flex-container">
             <div className="image-container" />
