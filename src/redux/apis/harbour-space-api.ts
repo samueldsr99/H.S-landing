@@ -23,8 +23,7 @@ const withCamelize =
     return response;
   };
 
-export const harbourSpaceApi = createApi({
-  reducerPath: "harbourSpaceApi",
+const harbourSpaceApi = createApi({
   baseQuery: withCamelize(baseQuery),
   endpoints: (builder) => ({
     getDataScienceApprenticeshipZeptolab: builder.query<GetDataScienceApprenticeshipZeptolabResponse, void>({
@@ -32,3 +31,5 @@ export const harbourSpaceApi = createApi({
     }),
   }),
 });
+
+export default harbourSpaceApi;

@@ -1,3 +1,3 @@
-import { harbourSpaceApi } from "@/redux/slices/api-slice";
+import harbourSpaceApi from "@/redux/apis/harbour-space-api";
 
 export default harbourSpaceApi.useGetDataScienceApprenticeshipZeptolabQuery;

@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/dist/query";
 
-import { harbourSpaceApi } from "./slices/api-slice";
+import harbourSpaceApi from "./apis/harbour-space-api";
 
 export const store = configureStore({
   reducer: {
