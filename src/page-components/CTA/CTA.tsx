@@ -68,18 +68,18 @@ const CTA: React.FC = () => {
             )}
           </div>
           <div className="w-full md:w-1/2 space-y-7">
-            <div className="my-12 md:mt-0 flex gap-6">
+            <div className="my-12 md:mt-0 flex flex-col-reverse md:flex-row gap-6">
               <img className="object-cover" src={data?.scholarship?.company?.colorLogo?.title} width={80} height={80} />
-              <div>
-                <span className="text-blac text-lg font-light leading-6">Powered by:</span>
-                <p className="mt-2.5 text-2xl font-light leading-6">{data?.scholarship?.company?.name}</p>
+              <div className="flex flex-row items-center md:flex-col gap-2.5">
+                <span className="text-black text-sm md:text-lg font-light leading-6">Powered by:</span>
+                <p className="md:text-2xl font-medium md:font-light leading-6">{data?.scholarship?.company?.name}</p>
               </div>
             </div>
             <Card>
               <h4 className="text-primary text-base font-medium">Application closes in</h4>
               {data?.scholarship?.applicationEndDate && (
                 <Countdown
-                  className="text-[27px] font-light space-x-3"
+                  className="text-lg text-[27px] font-light space-x-3"
                   targetDate={new Date(data?.scholarship?.applicationEndDate)}
                 />
               )}
