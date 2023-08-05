@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({ categories, onSelectCategory }) => (
 const FAQList: React.FC<FAQListProps> = ({ faqs }) => (
   <ul className="px-2 mt-16">
     {faqs.map((faq) => (
-      <li key={faq.question}>
+      <li className="md:first:border-t" key={faq.question}>
         <FAQItem {...faq} />
       </li>
     ))}

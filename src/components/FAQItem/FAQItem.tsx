@@ -11,11 +11,11 @@ const FAQItem: React.FC<FAQItemProps> = ({ className, type, question, answer, ..
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className={clsx("flex justify-between items-start py-8", className)} {...props}>
+    <div className={clsx("flex justify-between items-start py-8 border-b border-[#E6E6E6]", className)} {...props}>
       <h4 className="w-[34%] text-lg hidden md:block shrink-0 text-primary md:text-xl font-medium leading-8">{type}</h4>
-      <div className="w-[58%] mr-12">
+      <div className="w-full md:w-[58%] mr-12">
         <h4 className="text-lg font-light leading-8 md:font-medium md:text-xl">{question}</h4>
-        {open && <p className="mt-8 font-light leading-8 text-lg md:text-xl">{answer}</p>}
+        {open && <p className="mt-8 font-light leading-8 text-base md:text-xl">{answer}</p>}
       </div>
       <button className="shrink-0 outline-none place-self-end self-start" onClick={() => setOpen((prev) => !prev)}>
         <img
