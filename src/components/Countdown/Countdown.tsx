@@ -1,5 +1,3 @@
-import clsx from "classnames";
-
 import useTimer from "@/hooks/useTimer";
 
 export interface CountdownProps {
@@ -11,7 +9,7 @@ const Countdown: React.FC<CountdownProps> = ({ className, targetDate }) => {
   const { days, hours, minutes, seconds } = useTimer(targetDate);
 
   return (
-    <div className={clsx("space-x-1", className)}>
+    <div className={className}>
       <span>{days} Days</span>
       <span>:</span>
       <span>{hours} Hrs</span>

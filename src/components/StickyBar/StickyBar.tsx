@@ -33,7 +33,7 @@ const StickyBar: React.FC<StickyBarProps> = () => {
 
   return (
     <div className="hidden bg-white lg:block fixed z-50 bottom-0 left-0 right-0 border-t border-[#DADADA]">
-      <div className="container max-w-7xl mx-auto">
+      <div className="container max-w-6xl mx-auto">
         <div className="shadow-sm px-2 pt-6 pb-4 flex justify-around">
           <Entry title={data?.scholarship.company.name} description={data?.scholarship.company.type} />
           <Entry title="Location" description={data?.scholarship.location.name} />
@@ -43,7 +43,9 @@ const StickyBar: React.FC<StickyBarProps> = () => {
           {data?.scholarship?.applicationEndDate && (
             <Entry
               title="Application closes in"
-              description={<Countdown targetDate={new Date(data?.scholarship?.applicationEndDate)} />}
+              description={
+                <Countdown className="space-x-1.5" targetDate={new Date(data?.scholarship?.applicationEndDate)} />
+              }
             />
           )}
         </div>

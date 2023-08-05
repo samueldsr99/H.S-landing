@@ -28,6 +28,13 @@ export interface Company {
   color: string;
   website?: string | null;
   rank: number;
+  colorLogo: {
+    rawFile: {
+      preview: string;
+    };
+    src: string;
+    title: string;
+  };
 }
 
 export interface Paragraph {
@@ -59,6 +66,17 @@ export interface FAQItem {
   type: string;
   question: string;
   answer: Paragraph[];
+}
+
+export interface Program {
+  programLogo: {
+    rawFile: {
+      preview: string;
+    };
+    src: string;
+    title: string;
+  };
+  jsonLogo: string;
 }
 
 export interface Scholarship {
@@ -102,6 +120,7 @@ export interface Scholarship {
     categories: string[];
   };
   company: Company;
+  program: Program;
 }
 
 export interface GetDataScienceApprenticeshipZeptolabResponse {

@@ -60,7 +60,7 @@ const FAQ: React.FC = () => {
 
   return !isLoading ? (
     <section className="mt-40" id="faq">
-      <div className="container max-w-7xl mx-auto px-4 md:px-10">
+      <div className="container max-w-6xl mx-auto px-4 md:px-10">
         <Header categories={categories} onSelectCategory={(category) => setFilterBy(category)} />
         <FAQList faqs={faqs} />
       </div>
