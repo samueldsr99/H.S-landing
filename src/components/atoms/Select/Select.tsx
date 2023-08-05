@@ -8,7 +8,7 @@ const Select: React.FC<SelectProps> = ({ className, children, ...props }) => {
   return (
     <select
       className={clsx(
-        "text-primary text-lg flex items-center gap-2.5 font-medium pr-16 py-4 pl-6 border border-[#DADADA] rounded-[29px] outline-none",
+        "bg-white text-primary text-lg flex items-center gap-2.5 font-medium pr-16 py-4 pl-6 border border-[#DADADA] rounded-[29px] outline-none",
         className,
       )}
       {...props}
