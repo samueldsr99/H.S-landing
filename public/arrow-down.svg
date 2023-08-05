@@ -1,0 +1,34 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="30" height="30" fill="#E5E5E5"/>
+<g id="Desktop" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="4547" transform="translate(-1143 -3014)" fill="white"/>
+<g id="08-Frequently">
+<g id="Superior" clip-path="url(#clip1_0_1)">
+<g id="Filter" clip-path="url(#clip2_0_1)">
+<g id="DropDown">
+<rect id="DropDown_2" x="-188.5" y="-13.5" width="234" height="57" rx="28.5" stroke="#DADADA"/>
+<g id="Content" clip-path="url(#clip3_0_1)">
+<g id="Icon/Color/Arrow/Right">
+<path id="Arrow" d="M19 13L15 17L11 13" stroke="#4F469C" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="4547" fill="white" transform="translate(-1143 -3014)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="1043" height="112" fill="white" transform="translate(-997 -41)"/>
+</clipPath>
+<clipPath id="clip2_0_1">
+<rect width="317" height="58" fill="white" transform="translate(-271 -14)"/>
+</clipPath>
+<clipPath id="clip3_0_1">
+<rect width="195" height="30" fill="white" transform="translate(-165)"/>
+</clipPath>
+</defs>
+</svg>

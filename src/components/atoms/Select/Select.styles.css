@@ -1,0 +1,12 @@
+/* Remove select arrow */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* custom arrow */
+    background-image: url(/arrow-down.svg);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 16px) center;
+}
