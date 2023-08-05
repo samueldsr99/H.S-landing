@@ -69,6 +69,7 @@ export interface FAQItem {
 }
 
 export interface Program {
+  name: string;
   programLogo: {
     rawFile: {
       preview: string;
