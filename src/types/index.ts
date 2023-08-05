@@ -98,7 +98,7 @@ export interface Scholarship {
   internshipRequirements: List;
   encourageText: Paragraph[];
   faqs: {
-    item: FAQItem[];
+    items: FAQItem[];
     categories: string[];
   };
   company: Company;
