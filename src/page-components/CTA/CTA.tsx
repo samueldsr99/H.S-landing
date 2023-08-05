@@ -54,11 +54,6 @@ const CTA: React.FC = () => {
       <div className="container max-w-6xl mx-auto px-4 md:px-10">
         <div className="flex flex-col md:flex-row gap-x-20 gap-y-6">
           <div className="w-full relative md:w-1/2 space-y-10">
-            {data?.scholarship?.program?.jsonLogo && (
-              <div className="lottie-icon w-52 h-52 absolute -z-10 right-8 -top-16 icon-">
-                <LottieAnimation animationData={data?.scholarship?.program?.jsonLogo} />
-              </div>
-            )}
             <h1 className="text-primary text-5xl font-medium leading-[56px]">{data?.scholarship?.name}</h1>
             <MovingContainer
               className="hidden md:block"
@@ -66,6 +61,11 @@ const CTA: React.FC = () => {
               description={data?.scholarship?.description?.[0]?.data ?? ""}
               position={data?.scholarship?.program?.name ?? ""}
             />
+            {data?.scholarship?.program?.jsonLogo && (
+              <div className="lottie-icon w-52 h-52 absolute -z-10 -right-10 -top-24 icon-">
+                <LottieAnimation animationData={data?.scholarship?.program?.jsonLogo} />
+              </div>
+            )}
           </div>
           <div className="w-full md:w-1/2 space-y-7">
             <div className="my-12 md:mt-0 flex gap-6">
