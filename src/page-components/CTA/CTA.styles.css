@@ -1,0 +1,27 @@
+.lottie-icon {
+    opacity: 0;
+    animation: 0.5s ease 0.3s 1 normal forwards running icon-appear-animation
+}
+
+@keyframes icon-appear-animation {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.grid-card::after {
+    z-index: -10;
+    content: "";
+    position: absolute;
+    top: 80px;
+    right: -200px;
+    height: 285px;
+    width: 560px;
+    background: url(/pattern-2.svg) 50% 50% / 40px;
+    border: 1px solid rgb(230, 230, 230);
+}
