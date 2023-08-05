@@ -16,7 +16,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ categories, onSelectCategory }) => (
   <div className="flex flex-col md:flex-row justify-between md:items-center">
     <h2 className="text-primary font-medium leading-[56px] text-4xl md:text-5xl">Frequently asked questions</h2>
-    <div className="mt-8 md:mt-0 inline-flex items-center gap-6">
+    <div className="mt-8 md:mt-0 flex flex-col sm:flex-row items-start sm:items-center gap-6">
       <span className="text-[#6A6A6A] font-light leading-6 text-base shrink-0">Filter by:</span>
       <Select defaultValue="" onChange={(e) => onSelectCategory(e.target.value)}>
         <option value="">Program conditions</option>
